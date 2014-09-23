@@ -2,7 +2,7 @@ var http = require('http'),
   exec = require('child_process').exec;
 
 http.createServer(function (req, res) {
-  child = exec('php script.php',
+  child = exec('./php script.php',
     function (error, stdout, stderr) {
       if(error){
         throw error;
